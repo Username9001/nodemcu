@@ -33,8 +33,8 @@ if (isset($_GET['state'])){
   $fp = fopen("log.txt", "a") or die("Unable to open file!");
 
   $state = ($_GET['state'] === '1')?'ON':'OFF';
-  // $ip = $_SERVER['REMOTE_ADDR'];
-  $ip = "143.176.135.108";
+  $ip = $_SERVER['REMOTE_ADDR'];
+  // $ip = "143.176.135.108";
   $now = date("F j, Y, H:i:s ");
 
   // IP Info API:
