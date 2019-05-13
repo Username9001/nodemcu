@@ -126,7 +126,8 @@ function current_state() {
       var lines = data.split('\n');
       lines.reverse();
       var result = '';
-      for(var i = 0;i < lines.length;i++){
+    //   for(var i = 0;i < lines.length;i++){
+      for(var i = 0;i < 15;i++){
         if (lines[i] != ''){
           var cells = lines[i].split('-');
           cell = '<tr>';
