@@ -1,6 +1,6 @@
 <?php
 $button = $_GET['pressed'];
-$servername = "http://159.65.204.46/";
+$servername = "159.65.204.46";
 $username = "root";
 $password = "tiger";
 $dbname = "nodemcu";
@@ -11,7 +11,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
 
-// Retrieve DB
+// Retrieve DB from server
 $sql = "SELECT * FROM buttonpress ORDER by id DESC LIMIT 33";
 $result = $conn->query($sql);
 $conn->close();
