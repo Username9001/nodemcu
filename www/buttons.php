@@ -1,6 +1,6 @@
 <?php
 $button = $_GET['pressed'];
-$servername = "localhost";
+$servername = "http://159.65.204.46/";
 $username = "root";
 $password = "tiger";
 $dbname = "nodemcu";
